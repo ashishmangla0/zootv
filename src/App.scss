@@ -1,0 +1,30 @@
+*{
+  margin-top: 0;
+}
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+main {
+  flex-shrink: 0;
+}
+footer {
+  margin-top: auto;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+  margin: 0;
+}
+@import "style/icons/icons";

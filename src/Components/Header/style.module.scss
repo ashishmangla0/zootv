@@ -1,0 +1,18 @@
+.header{
+    &_top{
+        border-bottom:1px solid #eeeeee;
+    }
+    &_logo{
+        width: 150px;
+    }
+    &_row{
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_nav{
+        padding: 10px 0;
+    }
+    &_login{
+        font-size: 2rem;
+    }
+}

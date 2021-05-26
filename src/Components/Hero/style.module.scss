@@ -1,0 +1,28 @@
+.hero {
+  padding: 2rem 0;
+  position: relative;
+  z-index: 1;
+  &_inner {
+    height: 300px;
+    background: url(../../resources/bg-image-1.jpg) no-repeat;
+    &::before {
+      position: absolute;
+      content: "";
+
+      background: #fd4766;
+      background: linear-gradient(
+        90deg,
+        #1c99fe 20.69%,
+        #7644ff 50.19%,
+        #fd4766 79.69%
+      );
+
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.7;
+    }
+  }
+}
