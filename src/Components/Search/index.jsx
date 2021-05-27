@@ -36,7 +36,6 @@ const Search = () => {
                         Search
                     </button>
                 </form>
-                {term}
                 {
                     search?.length > 0 &&
                     <div className={style.search_result}>
