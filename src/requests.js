@@ -4,5 +4,4 @@ const request = {
     upcoming: `movie/upcoming?api_key=${process.env.REACT_APP_API}`,
     horror: `movie/upcoming?api_key=${process.env.REACT_APP_API}&with_genres=27`
 }
-
 export default request
