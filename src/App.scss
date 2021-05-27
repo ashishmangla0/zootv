@@ -23,7 +23,7 @@ footer {
 
 body {
   font-family: "Nunito", sans-serif;
-  line-height: 1.5;
+  line-height: 1.2;
   font-size: 1rem;
   margin: 0;
 }
@@ -36,7 +36,9 @@ body {
       font-size: 3.25rem;
       font-weight: 700;
       margin-bottom: 1rem;
-      line-height: 1.2;
     }
+  }
+  &__content{
+    margin-bottom: 1.25rem;
   }
 }
