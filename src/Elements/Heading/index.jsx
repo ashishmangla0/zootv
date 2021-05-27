@@ -10,9 +10,6 @@ const Heading = ({ level, title,className }) => {
   }
   export default Heading
 
-
-
-
 //   type propsHeading = {
 //     level: any,
 //     title?: any,

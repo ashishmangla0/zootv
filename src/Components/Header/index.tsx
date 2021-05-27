@@ -8,6 +8,7 @@ import Icon from '../../Elements/Icon';
 import Row from '../../Elements/Row';
 import Col from '../../Elements/Col';
 import { Link } from 'react-router-dom';
+import Search from '../Search';
 // }
 const Header: React.FC = () => {
     return (
@@ -27,20 +28,21 @@ const Header: React.FC = () => {
             </div>
             <nav className={style.header_nav}>
                 <Container>
-                <Row className={style.header_row}>
-                <Col>
-                <Link to="/">
-                <Logo width={150} className={style.header_logo} />
-                </Link>
-                </Col>
-                <Col>
-                <div className={style.header_login}>
-                        <Icon name="user"></Icon>
-                    </div>
-                </Col>
-                </Row>
-
-
+                    <Row className={style.header_row}>
+                        <Col>
+                            <Link to="/">
+                                <Logo width={150} className={style.header_logo} />
+                            </Link>
+                        </Col>
+                        <Col>
+                            <Search/>
+                        </Col>
+                        <Col>
+                            <div className={style.header_login}>
+                                <Icon name="user"></Icon>
+                            </div>
+                        </Col>
+                    </Row>
                 </Container>
             </nav>
         </header>
