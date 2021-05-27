@@ -32,7 +32,6 @@ const MovieList = ({ title, fetchUrl }) => {
         const response = await fetch(`${process.env.REACT_APP_SITE}${fetchUrl}`);
         const data = await response.json();
         setMovieList(data.results);
-        console.log(data.results);
     }
     useEffect(() => {
         loadData();
@@ -44,7 +43,6 @@ const MovieList = ({ title, fetchUrl }) => {
         slidesToShow: 3,
         slidesToScroll: 1,
         lazyLoad: true,
-
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />
     };
@@ -62,7 +60,6 @@ const MovieList = ({ title, fetchUrl }) => {
                     />
                 )}
             </Slider>
-
         </>
     )
 }

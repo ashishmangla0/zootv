@@ -15,4 +15,10 @@
     &_login{
         font-size: 2rem;
     }
+    &_search{
+        &_wrap{
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
 }

@@ -1,0 +1,30 @@
+.breadcrumb {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  &_item {
+    position: relative;
+    display: inline-flex;
+    text-transform: capitalize;
+
+    &:not(:last-child) {
+      padding-right: 10px;
+      margin-right: 10px;
+      &::before {
+        content: "/";
+        position: absolute;
+        right: -2.5px;
+      }
+    }
+    a{
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+  &_active {
+    a {
+      font-weight: 600;
+    }
+  }
+}

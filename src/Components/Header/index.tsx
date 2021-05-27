@@ -34,7 +34,7 @@ const Header: React.FC = () => {
                                 <Logo width={150} className={style.header_logo} />
                             </Link>
                         </Col>
-                        <Col>
+                        <Col className={style.header_search_wrap}>
                             <Search/>
                         </Col>
                         <Col>

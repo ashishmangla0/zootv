@@ -1,11 +1,18 @@
-.container{
-    max-width:1300px;
-    margin: 0 auto;
-    padding: 0 15px;
-    &_fluid{
-        width:100%;
-        padding:0 100px;
-        margin-right: auto;
-        margin-left: auto;
-    }
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+  &_fluid {
+    width: 100%;
+    padding: 0 100px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &_center {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+  }
 }

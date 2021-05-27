@@ -1,4 +1,4 @@
-*{
+* {
   margin-top: 0;
 }
 *::after,
@@ -28,3 +28,15 @@ body {
   margin: 0;
 }
 @import "style/icons/icons";
+
+.block {
+  padding: 3rem 0;
+  &__title {
+    &--inner {
+      font-size: 3.25rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+  }
+}

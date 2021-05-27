@@ -12,7 +12,7 @@ const footerLinks = [{
     "title": "Terms Of Use"
 },
 {
-    "link" : "privacy-policy",
+    "link" : "policy",
     "title": "Privacy Policy"
 },
 {

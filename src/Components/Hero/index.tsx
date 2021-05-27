@@ -4,12 +4,13 @@ import style from './style.module.scss';
 type propsHero =  {
     children :  React.ReactChild | React.ReactChild[],
     className ?: string,
-    inner ?: boolean
+    inner ?: boolean,
+    center ?: boolean
 }
-const Hero : React.FC<propsHero> = ({children,inner}) =>{
+const Hero : React.FC<propsHero> = ({children,inner,center}) =>{
     return(
-        <Section className={`${style.hero} ${ inner ? style.hero_inner : style.hero_home}`}>
-            <Container>
+        <Section className={`${style.hero} ${ inner ? style.hero_inner : style.hero_home} ${center ? style.hero_center : ''}`}>
+            <Container center>
                 {children}
             </Container>
         </Section>

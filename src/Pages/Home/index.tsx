@@ -1,7 +1,7 @@
-import Hero from "./Components/Hero";
-import MovieList from "./Components/MovieList";
-import Container from "./Elements/Container";
-import requests from './requests';
+import Hero from "../../Components/Hero";
+import MovieList from "../../Components/MovieList";
+import Container from "../../Elements/Container";
+import requests from '../../requests';
 const Home = () => {
     return (
         <>
