@@ -15,22 +15,52 @@
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: 0.25rem 0 0 0.25rem;
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     position: relative;
     flex: 1 1 auto;
     width: 1%;
     min-width: 0;
   }
-  &_btn{
+  &_btn {
     margin-left: -1px;
     background: #7247c4;
     color: #ffffff;
     border: 0;
     border-radius: 0 0.25rem 0.25rem 0;
     padding: 0.375rem 1rem;
+  }
+  &_wrap {
+    position: relative;
+  }
+  &_result {
+    &_desc {
+      display: flex;
+      flex-flow: column wrap;
+    }
+    border: 1px solid #ced4da;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    z-index: 9;
+    max-height: 200px;
+    overflow-y: auto;
+    &_item {
+      display: flex;
+      align-items: center;
+      img {
+        width: 55px;
+        height: 70px;
+        margin-right: 10px;
+        object-fit: cover;
+      }
+
+      &:hover {
+        background: #ececec;
+      }
+      padding: 10px;
+      &:not(:last-child) {
+        border-bottom: 1px solid #eeeeee;
+      }
+    }
   }
 }

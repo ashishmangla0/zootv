@@ -25,7 +25,7 @@ const Home = () => {
             </section>
             <section>
                 <Container>
-                    <MovieList title="Trending" fetchUrl={requests.fetchTrending} />
+                    <MovieList title="Horror" fetchUrl={requests.horror} />
                 </Container>
             </section>
             <section>
