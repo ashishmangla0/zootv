@@ -3,13 +3,21 @@ import {
     Switch,
     Route
 } from "react-router-dom";
-import Terms from './Pages/Terms';
-import Home from './Pages/Home';
-import Policy from './Pages/Policy';
-import SignIn from './Pages/Signin';
+import React, { Suspense, lazy } from 'react'
+const Terms = lazy(() => import('./Pages/Terms'));
+const Home = lazy(() => import('./Pages/Home'));
+const Policy = lazy(() => import('./Pages/Policy'));
+const SignIn = lazy(() => import('./Pages/Signin'));
+const SignUp = lazy(() => import('./Pages/Signup'));
 const Routes = () => {
     return (
+        <Suspense fallback={<div>
+            Loading
+        </div>}>
         <Switch>
+            <Route path="/signup" exact>
+                <SignUp />
+            </Route>
             <Route path="/signin" exact>
                 <SignIn />
             </Route>
@@ -23,6 +31,11 @@ const Routes = () => {
                 <Home />
             </Route>
         </Switch>
+
+
+
+        </Suspense>
+
     )
 }
 export default Routes
