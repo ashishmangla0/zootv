@@ -6,9 +6,13 @@ import {
 import Terms from './Pages/Terms';
 import Home from './Pages/Home';
 import Policy from './Pages/Policy';
+import SignIn from './Pages/Signin';
 const Routes = () => {
     return (
         <Switch>
+            <Route path="/signin" exact>
+                <SignIn />
+            </Route>
             <Route path="/terms" exact>
                 <Terms />
             </Route>
@@ -21,5 +25,4 @@ const Routes = () => {
         </Switch>
     )
 }
-
 export default Routes
