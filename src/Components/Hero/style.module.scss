@@ -5,10 +5,10 @@
   &_inner {
     height: 250px;
     background: url(../../resources/bg-image-1.jpg) no-repeat;
+    background-size: cover;
     &::before {
       position: absolute;
       content: "";
-
       background: #fd4766;
       background: linear-gradient(
         90deg,
@@ -16,7 +16,6 @@
         #7644ff 50.19%,
         #fd4766 79.69%
       );
-
       z-index: -1;
       top: 0;
       bottom: 0;
